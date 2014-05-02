@@ -4,6 +4,9 @@
       <input type="text" name="username" placeholder="Enter your username"><br>
       <input type="text" name="password" placeholder="Enter your password"><br>
       <input type="submit" value="Login">
+      <% if @error_login %>
+        <small>Hey uncool dude.</small>
+      <% end %>
     </form>
 
   <h2>Sign Up</h2>
@@ -11,8 +14,8 @@
       <input type="text" name="username" placeholder="Enter your username"><br>
       <input type="text" name="password" placeholder="Enter your password"><br>
       <input type="submit" value="Sign Up">
-      <% if @error %>
-        <small>"Hey. Someone stole your name. Pick a new one."</small>
+      <% if @error_register %>
+        <small>Hey. Someone stole your name. Pick a new one.</small>
       <% end %>
     </form>
 
