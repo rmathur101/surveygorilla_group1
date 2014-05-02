@@ -5,6 +5,7 @@ get '/' do
   # redirect to '/example'
   erb :index
 end
+
 #NOTES
 #what do we need for sessions?
 #where?
@@ -46,3 +47,4 @@ end
 get '/user' do
   erb :dashboard
 end
+
